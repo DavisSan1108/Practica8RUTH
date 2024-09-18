@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadrado Mágico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador de Cuadrado Mágico</h1>
+        <div class="form-group">
+            <label for="n">Tamaño del cuadrado (n x n):</label>
+            <input type="number" id="n" min="2" max="10" value="3" required>
+        </div>
+        <button onclick="generarCuadro()">Generar Cuadro</button>
+        <div id="cuadro" class="matrix"></div>
+        <button id="verificarBtn" onclick="verificarCuadro()" style="display:none;">Verificar Cuadro Mágico</button>
+        <div id="resultado" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
